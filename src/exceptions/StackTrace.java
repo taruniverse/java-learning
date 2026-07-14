@@ -1,5 +1,6 @@
 package exceptions;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class StackTrace {
@@ -22,7 +23,10 @@ public class StackTrace {
                 System.out.println(stackTree[i]);
             } **/
         }
+    }
 
+    public static void fileMain  () throws FileNotFoundException {
+        FileReader file = new FileReader("a.pdf");
     }
 
     public static void level3() {
